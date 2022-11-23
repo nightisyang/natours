@@ -22,7 +22,7 @@ app.set('views', path.join(__dirname, 'views'));
 
 // 1) GLOBAL MIDDLEWARES
 // serving static files
-app.use(express.static(path.join(__dirname, 'public')));
+app.use('/natours', express.static(path.join(__dirname, 'public')));
 
 // SET SECURITY HTTP HEADERS
 const scriptSrcUrls = [
@@ -124,10 +124,10 @@ app.use((req, res, next) => {
 });
 
 // 3) ROUTES
-app.use('/', viewRouter);
-app.use('/api/v1/tours', tourRouter);
-app.use('/api/v1/users', userRouter);
-app.use('/api/v1/reviews', reviewRouter);
+app.use('/natours', viewRouter);
+app.use('/natours/api/v1/tours', tourRouter);
+app.use('/natours/api/v1/users', userRouter);
+app.use('/natours/api/v1/reviews', reviewRouter);
 
 app.all('*', (req, res, next) => {
   // const err = new Error(`Can't find ${req.originalUrl} on this server!`);

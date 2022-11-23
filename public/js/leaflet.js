@@ -24,7 +24,7 @@ export const displayMap = locations => {
   // ----------------------------------------------
 
   const greenIcon = L.icon({
-    iconUrl: '/img/pin.png',
+    iconUrl: '/natours/img/pin.png',
     iconSize: [32, 40], // size of the icon
     iconAnchor: [16, 45], // point of the icon which will correspond to marker's location
     popupAnchor: [0, -50] // point from which the popup should open relative to the iconAnchor

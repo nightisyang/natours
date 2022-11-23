@@ -12,6 +12,7 @@ router.use(authController.isLoggedIn);
 router.get('/', viewController.getOverview);
 router.get('/tour/:slug', viewController.getTour);
 router.get('/login', viewController.loginPage);
+router.get('/signup', viewController.signUpPage);
 router.post('/submit-user-data', viewController.updateUserData);
 
 module.exports = router;
