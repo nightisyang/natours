@@ -24,7 +24,7 @@
     "cookie-parser": "^1.4.6",
     "dotenv": "^7.0.0",
     "express": "^4.16.4",
-    "exp3ress-mongo-sanitize": "^2.2.0",
+    "express-mongo-sanitize": "^2.2.0",
     "express-rate-limit": "^6.4.0",
     "helmet": "^5.1.0",
     "hpp": "^0.2.3",
